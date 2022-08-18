@@ -94,6 +94,22 @@ function commander(cmd) {
       addLine("Opening GitHub...", "color2", 0);
       newTab(github);
       break;
+    case "ls":
+      addLine("css  index.html  js", "color2", 0);
+      break;
+    case "cd css":
+      addLine("This is not a real terminal :)", "color2", 0);
+      break;
+    case "cd js":
+      addLine("This is not a real terminal :)", "color2", 0);
+      break;
+    case "pwd":
+      addLine("/", "color2", 0);
+      break;
+    case "game":
+      addLine("play some mario at :  https://supermarioplay.com/", "color2", 0);
+      break;
+
     default:
       addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
       break;
