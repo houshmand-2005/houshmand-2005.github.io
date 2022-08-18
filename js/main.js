@@ -109,7 +109,9 @@ function commander(cmd) {
     case "game":
       addLine("play some mario at :  https://supermarioplay.com/", "color2", 0);
       break;
-
+    case "cat index.html":
+      addLine("you can see it from here : https://github.com/houshmand-2005/houshmand-2005.github.io/blob/houshmand/index.html", "color2", 0);
+      break;
     default:
       addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
       break;
