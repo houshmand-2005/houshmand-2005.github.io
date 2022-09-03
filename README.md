@@ -1,5 +1,5 @@
 ## Amir Mohammad Houshmand
-Hello I'm Amir Mohammad Houshmand I'm 17.My favorite technologyes are : Python, Django, Docker, Django REST framework (DRF) 
+Hello I'm Amir Mohammad Houshmand I'm 17.My favorite technologyes are : Python, Django, Docker, Django REST framework (DRF) and working on tailwind css
 ### My projects:
 You can use my Django booklet from [here](https://github.com/houshmand-2005/hash_neco) 
 Also I have a django project you can see website from here [`https://learning-room.iran.liara.run/`](https://learning-room.iran.liara.run/) 
