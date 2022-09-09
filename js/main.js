@@ -94,6 +94,10 @@ function commander(cmd) {
       addLine("Opening GitHub...", "color2", 0);
       newTab(github);
       break;
+    case "rmzhash":
+      addLine("Opening RmzHash...", "color2", 0);
+      newTab("http://rmzhash.pythonanywhere.com/");
+      break;
     case "ls":
       addLine("css  index.html  js", "color2", 0);
       break;
@@ -113,20 +117,20 @@ function commander(cmd) {
       addLine("you can see it from here : https://github.com/houshmand-2005/houshmand-2005.github.io/blob/houshmand/index.html", "color2", 0);
       break;
     case "ping 8.8.8.8":
-      addLine("Pinging 8.8.8.8 with 32 bytes of data:", "color2", 0);
-      addLine("Reply from 8.8.8.8: bytes=32 time=39ms TTL=53", "color2", 0);
-      addLine("Reply from 8.8.8.8: bytes=32 time=37ms TTL=53", "color2", 0);
-      addLine("But this is not real :)", "color2", 0);
+      addLine("Pinging 8.8.8.8 with 32 bytes of data:", "color2", 80);
+      addLine("Reply from 8.8.8.8: bytes=32 time=39ms TTL=53", "color2", 80);
+      addLine("Reply from 8.8.8.8: bytes=32 time=37ms TTL=53", "color2", 80);
+      addLine("But this is not real :)", "color2", 80);
       break;
     case "admin":
-      addLine("-___-", "color2", 0);
+      addLine("-___-", "color2", 80);
       break;
     case "houshmand":
-      addLine("yes?", "color2", 0);
+      addLine("yes?", "color2", 80);
       break;
     case "time":
       var today = new Date();
-      addLine(today, "color2", 0);
+      addLine(String(today), "color2", 80);
       break;
     default:
       addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
