@@ -132,12 +132,17 @@ function commander(cmd) {
       var today = new Date();
       addLine(String(today), "color2", 80);
       break;
-    case "proxy":
+    case "proxyhere":
       addLine("https://t.me/proxy?server=narnia.fie-ol.autos.&port=443&secret=ee550fbe912b27753fa54a23c73ba806346d792e6972616e63656c6c2e6972", "color2", 80);
       addLine("https://t.me/proxy?server=Senator.plus-speed.immo&port=443&secret=7vQ1mpsyX_HR5QhN8OD3U3tzbGFjay5jb20=", "color2", 80);
+      addLine("https://msasanmh.github.io/PAC/Canada.pac", "color2", 80);
       break;
     default:
       addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
+      break;
+    case "proxy":
+      addLine("Opening Proxy...", "color2", 0);
+      newTab("https://prloxyir.iran.liara.run/");
       break;
   }
 }
