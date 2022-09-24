@@ -137,12 +137,12 @@ function commander(cmd) {
       addLine("https://t.me/proxy?server=Senator.plus-speed.immo&port=443&secret=7vQ1mpsyX_HR5QhN8OD3U3tzbGFjay5jb20=", "color2", 80);
       addLine("https://msasanmh.github.io/PAC/Canada.pac", "color2", 80);
       break;
-    default:
-      addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
-      break;
     case "proxy":
       addLine("Opening Proxy...", "color2", 0);
       newTab("https://prloxyir.iran.liara.run/");
+      break;
+    default:
+      addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
       break;
   }
 }
