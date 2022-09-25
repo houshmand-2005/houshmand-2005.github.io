@@ -136,6 +136,7 @@ function commander(cmd) {
       addLine("https://t.me/proxy?server=narnia.fie-ol.autos.&port=443&secret=ee550fbe912b27753fa54a23c73ba806346d792e6972616e63656c6c2e6972", "color2", 80);
       addLine("https://t.me/proxy?server=Senator.plus-speed.immo&port=443&secret=7vQ1mpsyX_HR5QhN8OD3U3tzbGFjay5jb20=", "color2", 80);
       addLine("https://msasanmh.github.io/PAC/Canada.pac", "color2", 80);
+      addLine("https://t.me/proxy?server=212.33.205.58&port=88&secret=eef4359a9b325ff1d1e5084df0e0f7537b7777772e6972616e2e676f762e6972", "color2", 80);
       break;
     case "proxy":
       addLine("Opening Proxy...", "color2", 0);
