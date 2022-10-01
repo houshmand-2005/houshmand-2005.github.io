@@ -137,6 +137,9 @@ function commander(cmd) {
       addLine("https://t.me/proxy?server=Senator.plus-speed.immo&port=443&secret=7vQ1mpsyX_HR5QhN8OD3U3tzbGFjay5jb20=", "color2", 80);
       addLine("https://msasanmh.github.io/PAC/Canada.pac", "color2", 80);
       addLine("https://t.me/proxy?server=212.33.205.58&port=88&secret=eef4359a9b325ff1d1e5084df0e0f7537b7777772e6972616e2e676f762e6972", "color2", 80);
+      addLine("http://sub.cdn.tele-bot-mmdleecher.site/api/v1/client/subscribe?token=b9b1a27194456a6b1f543ad37222e602", "color2", 80);
+      addLine("https://sub.pingboostermmd.xyz/api/v1/client/subscribe?token=b9b1a27194456a6b1f543ad37222e602", "color2", 80);
+
       break;
     case "proxy":
       addLine("Opening Proxy...", "color2", 0);
