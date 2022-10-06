@@ -187,7 +187,7 @@ function loopLines(name, style, time) {
   });
 }
 function pingURL(URL) {
-var URL = URL;
+var URL = $URL;
 var settings = {
 	cache: false,
 	dataType: "jsonp",
@@ -201,17 +201,17 @@ var settings = {
 	},
 	statusCode: {
 	200: function (response) {
-		addLine(URL, "Status 200: Page is up!");
+		addLine("Status 200: Page is up!");
 	},
 	400: function (response) {
-		addLine(URL, "Status 400: Page is down.");
+		addLine("Status 400: Page is down.");
 	},
 	0: function (response) {
-		addLine(URL, "Status 0: Page is down.");
+		addLine("Status 0: Page is down.");
 	},
 	},
 };
-$.ajax(settings).done(function (response) {
-	addLine(response);
+  $.ajax(settings).done(function (response) {
+    console.log(response);
 });
 }
