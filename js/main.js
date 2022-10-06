@@ -132,6 +132,11 @@ function commander(cmd) {
       var today = new Date();
       addLine(String(today), "color2", 80);
       break;
+    case "test":
+      addLine("testing...");
+      pingURL("http://rmzhash.pythonanywhere.com/");
+      pingURL("https://prloxyir.iran.liara.run/");
+      pingURL("https://houshmand-2005.github.io/");
     case "proxyhere":
       addLine("https://t.me/proxy?server=narnia.fie-ol.autos.&port=443&secret=ee550fbe912b27753fa54a23c73ba806346d792e6972616e63656c6c2e6972", "color2", 80);
       addLine("https://t.me/proxy?server=Senator.plus-speed.immo&port=443&secret=7vQ1mpsyX_HR5QhN8OD3U3tzbGFjay5jb20=", "color2", 80);
@@ -180,4 +185,33 @@ function loopLines(name, style, time) {
   name.forEach(function(item, index) {
     addLine(item, style, index * time);
   });
+}
+function pingURL(URL) {
+var URL = URL;
+var settings = {
+	cache: false,
+	dataType: "jsonp",
+	async: true,
+	crossDomain: true,
+	url: URL,
+	method: "GET",
+	headers: {
+	accept: "application/json",
+	"Access-Control-Allow-Origin": "*",
+	},
+	statusCode: {
+	200: function (response) {
+		addLine(URL, "Status 200: Page is up!");
+	},
+	400: function (response) {
+		addLine(URL, "Status 400: Page is down.");
+	},
+	0: function (response) {
+		addLine(URL, "Status 0: Page is down.");
+	},
+	},
+};
+$.ajax(settings).done(function (response) {
+	addLine(response);
+});
 }
