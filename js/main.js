@@ -211,7 +211,7 @@ var settings = {
 	},
 	},
 };
-$.ajax(settings).done(function (response) {
+URL.ajax(settings).done(function (response) {
 	addLine(response);
 });
 }
