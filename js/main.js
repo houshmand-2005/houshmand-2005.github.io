@@ -132,12 +132,6 @@ function commander(cmd) {
       var today = new Date();
       addLine(String(today), "color2", 80);
       break;
-    case "test":
-      addLine("testing...");
-      pingURL("www.rmzhash.pythonanywhere.com");
-      pingURL("www.prloxyir.iran.liara.run");
-      pingURL("www.houshmand-2005.github.io");
-      addLine("done");
     case "proxyhere":
       addLine("https://t.me/proxy?server=narnia.fie-ol.autos.&port=443&secret=ee550fbe912b27753fa54a23c73ba806346d792e6972616e63656c6c2e6972", "color2", 80);
       addLine("https://t.me/proxy?server=Senator.plus-speed.immo&port=443&secret=7vQ1mpsyX_HR5QhN8OD3U3tzbGFjay5jb20=", "color2", 80);
@@ -185,44 +179,5 @@ function addLine(text, style, time) {
 function loopLines(name, style, time) {
   name.forEach(function(item, index) {
     addLine(item, style, index * time);
-  });
-}
-function pingURL(urlinput) {
-  
-  // The custom URL entered by user
-  var URL = urlinput;
-  var settings = {
-  
-    // Defines the configurations
-    // for the request
-    cache: false,
-    dataType: "jsonp",
-    async: true,
-    crossDomain: true,
-    url: URL,
-    method: "GET",
-    headers: {
-      accept: "application/json",
-      "Access-Control-Allow-Origin": "*",
-    },
-  
-    // Defines the response to be made
-    // for certain status codes
-    statusCode: {
-      200: function (response) {
-        console.log("Status 200: Page is up!");
-      },
-      400: function (response) {
-        console.log("Status 400: Page is down.");
-      },
-      0: function (response) {
-        console.log("Status 0: Page is down.");
-      },
-    },
-  };
-  
-  // Sends the request and observes the response
-  $.ajax(settings).done(function (response) {
-    console.log(response);
   });
 }
