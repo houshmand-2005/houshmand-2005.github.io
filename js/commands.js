@@ -25,10 +25,10 @@ social = [
 projects = [
   "<br>",
   '<p>You can use my Django booklet from <a href="https://github.com/houshmand-2005/hash_neco">here</a>', 
-  'Also I have a django project you can see website from here <a href="https://learning-room.iran.liara.run/"><code>https://learning-room.iran.liara.run/</code></a>', 
+  'Also I have a django project you can see website from <a href="https://learning-room.iran.liara.run/">here</a>', 
   'and you can find the source of this projcet from <a href="https://github.com/houshmand-2005/django4">here</a><br>',
-  'I have a encoder decoder text base by django you can see source from <a href="https://github.com/houshmand-2005/RmzHash/tree/RmzHash">here</a> and the live verion : <a href="http://rmzhash.pythonanywhere.com/"><code>http://rmzhash.pythonanywhere.com/</code></a></p>',
-  'Also i have a Python Package into the pypi named py2hlog (python logs to html log formatter) you can see it from here : <a href="http://pypi.org/project/py2hlog/">pypi.org/project/py2hlog/</a>',
+  'I have a encoder decoder text base by django you can see source from <a href="https://github.com/houshmand-2005/RmzHash/tree/RmzHash">here</a> and the <a href="http://rmzhash.pythonanywhere.com/">live verion</a></p>',
+  'Also i have a Python Package into the pypi named py2hlog (python logs to html log formatter) you can see it from <a href="http://pypi.org/project/py2hlog/">here</a>',
   "<br>",
 ];
 
