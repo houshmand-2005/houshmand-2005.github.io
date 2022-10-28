@@ -90,6 +90,10 @@ function commander(cmd) {
       }, 1);
       break;
     // socials
+    case "pypi":
+      addLine("Opening PyPi...", "color2", 0);
+      newTab("https://pypi.org/project/py2hlog/");
+      break;
     case "github":
       addLine("Opening GitHub...", "color2", 0);
       newTab(github);
