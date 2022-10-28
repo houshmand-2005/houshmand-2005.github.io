@@ -28,7 +28,8 @@ projects = [
   'Also I have a django project you can see website from here <a href="https://learning-room.iran.liara.run/"><code>https://learning-room.iran.liara.run/</code></a>', 
   'and you can find the source of this projcet from <a href="https://github.com/houshmand-2005/django4">here</a><br>',
   'I have a encoder decoder text base by django you can see source from <a href="https://github.com/houshmand-2005/RmzHash/tree/RmzHash">here</a> and the live verion : <a href="http://rmzhash.pythonanywhere.com/"><code>http://rmzhash.pythonanywhere.com/</code></a></p>',
-  "<br>"
+  'Also i have a Python Package into the pypi named py2hlog (python logs to html log formatter) you can see it from here : <a href="http://pypi.org/project/py2hlog/">pypi.org/project/py2hlog/</a>',
+  "<br>",
 ];
 
 help = [
