@@ -5,7 +5,7 @@ whois = [
   "<br>",
   "Hey👋",
   "I’m Amir Mohammad Houshmand",
-  "I’m 17 and My favorite technologyes are : ",
+  "I’m 18 and My favorite technologyes are : ",
   "Python, Django, Docker, Django REST framework (DRF), fast api and react",
   "<br>"
 ];
