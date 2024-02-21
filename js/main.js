@@ -1,7 +1,7 @@
 var before = document.getElementById("before");
 var liner = document.getElementById("liner");
-var command = document.getElementById("typer"); 
-var textarea = document.getElementById("texter"); 
+var command = document.getElementById("typer");
+var textarea = document.getElementById("texter");
 var terminal = document.getElementById("terminal");
 
 var git = 0;
@@ -9,7 +9,7 @@ var pw = false;
 let pwd = false;
 var commands = [];
 
-setTimeout(function() {
+setTimeout(function () {
   loopLines(banner, "", 80);
   textarea.focus();
 }, 100);
@@ -33,12 +33,15 @@ function enterKey(e) {
     let et = "*";
     let w = textarea.value.length;
     command.innerHTML = et.repeat(w);
-    
   } else {
     if (e.keyCode == 13) {
       commands.push(command.innerHTML);
       git = commands.length;
-      addLine("houshmand@houshmand2005:~$ " + command.innerHTML, "no-animation", 0);
+      addLine(
+        "houshmand@houshmand2005:~$ " + command.innerHTML,
+        "no-animation",
+        0
+      );
       commander(command.innerHTML.toLowerCase());
       command.innerHTML = "";
       textarea.value = "";
@@ -80,11 +83,15 @@ function commander(cmd) {
       addLine("<br>", "command", 80 * commands.length + 50);
       break;
     case "email":
-      addLine('Opening mailto:<a href="mailto:houshmand2005@gmail.com">houshmand2005@gmail.com</a>...', "color2", 80);
+      addLine(
+        'Opening mailto:<a href="mailto:houshmand2005@gmail.com">houshmand2005@gmail.com</a>...',
+        "color2",
+        80
+      );
       newTab(email);
       break;
     case "clear":
-      setTimeout(function() {
+      setTimeout(function () {
         terminal.innerHTML = '<a id="before"></a>';
         before = document.getElementById("before");
       }, 1);
@@ -118,7 +125,11 @@ function commander(cmd) {
       addLine("play some mario at :  https://supermarioplay.com/", "color2", 0);
       break;
     case "cat index.html":
-      addLine("you can see it from here : https://github.com/houshmand-2005/houshmand-2005.github.io/blob/houshmand/index.html", "color2", 0);
+      addLine(
+        "you can see it from here : https://github.com/houshmand-2005/houshmand-2005.github.io/blob/houshmand/index.html",
+        "color2",
+        0
+      );
       break;
     case "ping 8.8.8.8":
       addLine("Pinging 8.8.8.8 with 32 bytes of data:", "color2", 80);
@@ -136,24 +147,18 @@ function commander(cmd) {
       var today = new Date();
       addLine(String(today), "color2", 80);
       break;
-    case "proxyhere":
-      addLine("https://t.me/proxy?server=narnia.fie-ol.autos.&port=443&secret=ee550fbe912b27753fa54a23c73ba806346d792e6972616e63656c6c2e6972", "color2", 80);
-      addLine("https://t.me/proxy?server=Senator.plus-speed.immo&port=443&secret=7vQ1mpsyX_HR5QhN8OD3U3tzbGFjay5jb20=", "color2", 80);
-      addLine("https://msasanmh.github.io/PAC/Canada.pac", "color2", 80);
-      addLine("https://t.me/proxy?server=212.33.205.58&port=88&secret=eef4359a9b325ff1d1e5084df0e0f7537b7777772e6972616e2e676f762e6972", "color2", 80);
-      break;
-    case "proxy":
-      addLine("Opening Proxy...", "color2", 0);
-      newTab("https://prloxyir.iran.liara.run/");
-      break;
     default:
-      addLine("<span class=\"inherit\">Command not found. For a list of commands, type <span class=\"command\">'help'</span>.</span>", "error", 100);
+      addLine(
+        '<span class="inherit">Command not found. For a list of commands, type <span class="command">\'help\'</span>.</span>',
+        "error",
+        100
+      );
       break;
   }
 }
 
 function newTab(link) {
-  setTimeout(function() {
+  setTimeout(function () {
     window.open(link, "_blank");
   }, 500);
 }
@@ -168,7 +173,7 @@ function addLine(text, style, time) {
       t += text.charAt(i);
     }
   }
-  setTimeout(function() {
+  setTimeout(function () {
     var next = document.createElement("p");
     next.innerHTML = t;
     next.className = style;
@@ -179,9 +184,8 @@ function addLine(text, style, time) {
   }, time);
 }
 
-
 function loopLines(name, style, time) {
-  name.forEach(function(item, index) {
+  name.forEach(function (item, index) {
     addLine(item, style, index * time);
   });
 }
